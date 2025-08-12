@@ -28,6 +28,7 @@
   }
   </script>
   <link rel="stylesheet" href="style/style.css">
+  <script src="js/script.js"></script>
 </head>
 
 <body class="text-slate-800">
@@ -36,7 +37,7 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
         <img src="img/favicon-48.ico" alt="Icône" width="40" height="40" />
-        <div>
+        <div class="no-mobile">
           <div class="text-lg font-semibold">Éditions des Lueurs Reliées</div>
           <div class="text-xs subtitle">Poésies — Romans — Projets Éditoriaux</div>
         </div>
@@ -57,7 +58,7 @@
           <line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
         </button>
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-2xl">☰</button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-3xl">☰</button>
       </div>
     </div>
 
@@ -84,7 +85,7 @@
         <div class="absolute inset-0 hero-overlay"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
           <div class="max-w-2xl">
-            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">Relier les plumes, éclairer les consciences</h1>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight"><span class="md:hidden">Éditions des Lueurs Reliées : </span>Relier les plumes, éclairer les consciences</h1>
             <p class="mt-4 text-lg md:text-l">Les Éditions des Lueurs Reliées est une maison d’édition fondée avec une mission claire : offrir aux auteur·e·s une plateforme de publication solidaire. Portés par une vision d’une littérature inclusive, accessible et porteuse de valeurs.</p>
             <div class="mt-6 flex gap-3">
               <a href="catalogue.html" class="inline-block bg-white text-brand px-5 py-3 font-medium" style="background-color: #374C47;">Découvrir le catalogue</a>
@@ -258,7 +259,7 @@ border: 1px solid #F2E8D7; /* Bordure blanche */
     
     <!-- Colonne gauche : Présentation -->
     <div>
-      <h2 class="text-2xl font-bold">À la Une — Résidence d’Août</h2>
+      <h2 class="text-3xl font-bold">À la Une — Résidence d’Août</h2>
       <p class="mt-4">
         Chaque mois d’août, une voix poétique contemporaine est invitée à habiter l’espace numérique des Lueurs Reliées. 
         Durant 31 jours, l’auteur·e compose un poème inédit par jour, accompagné d’une image choisie ou créée pour l’occasion.
@@ -340,7 +341,7 @@ border: 1px solid #F2E8D7; /* Bordure blanche */
     <!-- Événements / Actualités -->
     <section id="collections" class="bg-slate-50 border-t">
   <div class="max-w-7xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold">Collections</h2>
+    <h2 class="text-3xl font-bold">Collections</h2>
 
     <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -408,6 +409,8 @@ outline: none; /* Supprime l'outline */
 
 <!-- Newsletter & Contact -->
 <section id="newsletter" class="max-w-7xl mx-auto px-6 py-6"> <!-- Réduction du padding vertical -->
+
+  <h2 class="text-3xl font-bold mt-4">Restons en contact</h2>
 
   <div id="contact" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8"> <!-- Réduction de la marge entre les blocs -->
 
@@ -489,19 +492,5 @@ outline: none; /* Supprime l'outline */
       </div>
     </footer>
   </main>
-
-  <script>
-    // small interactivity: mobile menu
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // fallback: accessible focus styles for keyboard users
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
-    });
-  </script>
 </body>
 </html>

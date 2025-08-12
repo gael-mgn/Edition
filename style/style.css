@@ -10,7 +10,7 @@ body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helv
 }
 
 
-      main {
+      main, body {
         background-color: #F2E8D7;
       }
       h2 {

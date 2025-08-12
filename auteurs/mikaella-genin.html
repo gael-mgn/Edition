@@ -1,125 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page auteur — Mikaëlla Génin</title>
-
-  <meta name="author" content="Gaël Maignan">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Mikaëlla Génin, biographie, artiste-auteur, auteur, écrivain">
-  <meta name="description" content="Née en 200. à ..., Mikaëlla Génin se passionne très tôt pour les langues et la littérature. Après un parcours en licence LLCER anglais, elle intègre le Master de traduction littéraire à l’université Paris-Cité. C’est dans le cadre de son stage de fin d’études qu’elle rejoint les Éditions des Lueurs Reliées, où elle conçoit et dirige sa première anthologie traduite. Elle y mêle son engagement féministe à son amour de la langue anglaise, en mettant en lumière des autrices souvent oubliées du canon littéraire.">
-
-  <link rel="stylesheet" href="../style/style.css">
-  <link rel="stylesheet" href="../style/mosaic.css">
-
-  <link rel="icon" href="../img/favicon-48.ico">
-
-  <script type="text/javascript" src="../js/reveal.js"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
-  <script src="../js/delaunator.min.js"></script>
-  <script type="text/javascript" src="../js/triangles.js"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <script type="module" src="https://gael-mgn.github.io/js/log.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nom de l'auteur — Éditions Lumen</title>
+  <meta name="description" content="Page auteur — biographie, ouvrages, actualités et contact de l'auteur·e." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    h1,h2{font-family:'Playfair Display', serif}
+    .cover {height:320px;object-fit:cover;border-radius:0.5rem}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nom de l'auteur",
+    "url": "https://www.editions-lumen.example/auteurs/nom-de-lauteur",
+    "image": "https://www.editions-lumen.example/images/auteurs/nom.jpg",
+    "sameAs": [
+      "https://twitter.com/auteur",
+      "https://www.instagram.com/auteur"
+    ],
+    "worksPublished": [
+      {"@type": "Book", "name": "Titre 1", "url": "https://www.editions-lumen.example/catalogue/titre-1"},
+      {"@type": "Book", "name": "Titre 2", "url": "https://www.editions-lumen.example/catalogue/titre-2"}
+    ]
+  }
+  </script>
 </head>
-<body>
-  <header>
-    <div class="navbar" id="navbar">
-    <a href="../index.html" class="title"><h1>Éditions des Lueurs Reliées</h1></a>
-    <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+<body class="bg-gray-50 text-slate-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#7c3aed"/><path d="M7 8h10v8H7z" fill="white" opacity="0.9"/></svg>
+        <div>
+          <div class="text-lg font-semibold">Éditions Lumen</div>
+          <div class="text-xs text-slate-500">Page auteur</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="../catalogue.html">Catalogue</a>
+        <a href="../auteurs.html">Auteurs</a>
+        <a href="../soumissions.html">Soumettre</a>
+      </nav>
     </div>
-    <nav class="nav-links" id="navLinks">
-      <a href="../index.html">Accueil</a>
-      <a href="../about.html">À propos</a>
-      <a href="../catalogue.html">Catalogue</a>
-      <a href="../contact.html">Contact</a>
-    </nav>
-    </div>
-
-
-    <div class="container" data-color="#994129" border-color="#F2E8D7" id="hero">
-    <svg class="triangle-background" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div class="overlay"></div> <!-- Filtre sombre -->
-    <div class="content">
-      <br>
-    </div>
-  </div>
   </header>
 
-  <main>
-  <section id="apropos">
-    <h2 class="reveal">Mikaëlla Génin</h2>
+  <!-- Hero author -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2">
+        <h1 class="text-4xl font-bold">Nom de l'auteur</h1>
+        <p class="mt-2 text-slate-600">Genres : roman • poésie • essais</p>
+        <p class="mt-6 text-slate-700">Biographie courte — un paragraphe de présentation synthétique de l'auteur·e. Inclure les éléments saillants : prix, univers, thématiques, années d'activité et particularités stylistiques.</p>
 
-    <p class="highlight">Auteure de <span class="italic"><a href="../books/quand la femme écrit la femme.html">Quand la femme écrit la femme</a></span></p>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <h3 class="font-semibold">Contact (presse & relations)</h3>
+            <p class="mt-2 text-sm text-slate-600">Agent / Service presse — <a href="mailto:presse@editions-lumen.example" class="text-indigo-600">presse@editions-lumen.example</a></p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-lg">
+            <h3 class="font-semibold">Réseaux</h3>
+            <p class="mt-2 text-sm text-slate-600"><a href="#" class="text-indigo-600">Twitter</a> • <a href="#" class="text-indigo-600">Instagram</a> • <a href="#" class="text-indigo-600">Site officiel</a></p>
+          </div>
+        </div>
 
-    <h3>Biographie</h3>
- 
-    <p>Née en 2002 à Dunkerque, Mikaëlla Génin se passionne très tôt pour les langues et la littérature. Après un parcours en licence LLCER anglais, elle intègre le Master de traduction littéraire à l’université Paris-Cité.<br> C’est dans le cadre de son stage de fin d’études qu’elle rejoint les Éditions des Lueurs Reliées, où elle conçoit et dirige sa première anthologie traduite. Elle y mêle son engagement féministe à son amour de la langue anglaise, en mettant en lumière des autrices souvent oubliées du canon littéraire.</p>
+        <div class="mt-8">
+          <h2 class="text-2xl font-bold">À propos</h2>
+          <p class="mt-3 text-slate-700">Biographie longue — plusieurs paragraphes qui racontent le parcours, les influences, les collaborations et les projets en cours. Mentionner les traductions, résidences, collaborations artistiques et distinctions importantes.</p>
+        </div>
+      </div>
 
-    <h3>Bibliographie</h3>
-
-    <ul>
-      <li><a href="../books/quand la femme écrit la femme.html"><span class="italic">Quand la femme écrit la femme : Une anthologie féminine et féministe</span>, 2025</a></li>
-    </ul>
-
-    <h3>Contact</h3>
-    <a href="mailto:mikaella.genin@lueurs-reliees.fr">mikaella.genin@lueurs-reliees.fr</a>
-
+      <aside class="flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Portrait de l'auteur" class="w-48 h-48 rounded-lg object-cover shadow">
+        <div class="mt-4 text-sm text-slate-600">Né·e en 19XX — Nationalité</div>
+        <a href="#press-kit" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-md text-sm">Télécharger le dossier presse</a>
+      </aside>
+    </div>
   </section>
 
-  <style type="text/css">
-    #container2{
-      background-color: #994129;
-    }
-  </style>
-</main>
+  <!-- Bibliographie -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold">Bibliographie</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Book card template -->
+      <article class="bg-white rounded-2xl shadow p-4 flex flex-col" aria-labelledby="book-1">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Couverture Titre 1" class="rounded-lg w-full h-44 object-cover">
+        <div class="mt-3 flex-1">
+          <h3 id="book-1" class="text-lg font-semibold">Titre 1</h3>
+          <p class="text-sm text-slate-500 mt-1">Roman — 2023</p>
+          <p class="text-sm mt-3 text-slate-600">Brève description du livre et son positionnement éditorial (prix éventuel).</p>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <a href="../catalogue.html#titre-1" class="text-sm text-indigo-600">Voir la fiche</a>
+          <button class="px-3 py-1 text-sm border rounded hover:bg-gray-50">Acheter</button>
+        </div>
+      </article>
 
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Informations société -->
-    <div class="footer-section">
-      <h3 class="footer-title">Éditions des Lueurs Reliées</h3>
-      <p>
-        Maison d'Édition Engagée<br>
-        +33 6 74 41 36 37<br>
-        contact@lueurs-reliees.fr<br>
-        75019 Paris, France
-      </p>
-      <!--<p>SIRET : 123 456 789 00010</p>-->
+      <!-- répéter pour d'autres ouvrages -->
     </div>
+  </section>
 
-    <!-- Liens utiles -->
-    <div class="footer-section">
-      <h4 class="footer-subtitle">Liens utiles</h4>
-      <ul class="footer-links">
-        <li><a href="../about.html">À propos</a></li>
-        <li><a href="../catalogue.html">Catalogue</a></li>
-        <li><a href="../policy.html">Mentions légales</a></li>
-        <li><a href="../contact.html">Contact</a></li>
+  <!-- Actualités / événements -->
+  <section class="bg-slate-50 border-t">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold">Actualités & événements</h2>
+      <ul class="mt-6 space-y-4 text-slate-700">
+        <li>
+          <strong>18 septembre 2025</strong> — Rencontre et lecture à la Librairie La Page, Paris. <a href="#" class="text-indigo-600">Plus d'infos</a>
+        </li>
+        <li>
+          <strong>Octobre 2025</strong> — Publication du nouveau recueil. <a href="#" class="text-indigo-600">Précommande</a>
+        </li>
       </ul>
     </div>
+  </section>
 
-    <!-- Réseaux sociaux -->
-    <div class="footer-section">
-      <h4 class="footer-subtitle">Suivez-nous</h4>
-      <div class="social-links">
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://linkedin.com">LinkedIn</a>
-        <a href="https://instagram.com">Instagram</a>
+  <!-- Presse & ressources téléchargeables -->
+  <section id="press-kit" class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold">Ressources presse</h2>
+    <div class="mt-6 grid sm:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold">Dossier de presse (PDF)</h3>
+        <p class="mt-2 text-sm text-slate-600">Biographie, photos HD, extraits et contacts.</p>
+        <a href="#" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-md text-sm">Télécharger</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold">Visuels HD</h3>
+        <p class="mt-2 text-sm text-slate-600">Couvertures, portraits et visuels éditoriaux.</p>
+        <a href="#" class="mt-4 inline-block bg-indigo-600 text-white px-4 py-2 rounded-md text-sm">Télécharger</a>
       </div>
     </div>
+  </section>
 
-  </div>
-
-  <div class="footer-bottom">
-    &copy; 2025 Éditions des Lueurs Reliées. Tous droits réservés.
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+      <div>
+        <strong>Éditions Lumen</strong>
+        <div class="text-sm text-slate-500 mt-2">© 1998–2025 — Tous droits réservés</div>
+      </div>
+      <nav class="flex gap-4 text-sm text-slate-600">
+        <a href="../catalogue.html">Catalogue</a>
+        <a href="../auteurs.html">Auteurs</a>
+        <a href="../soumissions.html">Soumettre un manuscrit</a>
+        <a href="../mentions-legales.html">Mentions légales</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
