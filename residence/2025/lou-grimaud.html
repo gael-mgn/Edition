@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Résidence d'Août — Lueurs Reliées | Éditions Lumen</title>
+  <meta name="description" content="Chaque août, une voix poétique compose 31 poèmes inédits pour la résidence d'Août des Lueurs Reliées. Édition 2025 : Lou Grimaud." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--accent:#7c3aed}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    h1,h2{font-family:'Playfair Display', serif}
+    .poem-card {transition: transform .18s ease, box-shadow .18s ease}
+    .poem-card:hover{transform: translateY(-6px)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWorkSeries",
+    "name": "Résidence d'Août — Lueurs Reliées",
+    "description": "Chaque année en août, un·e poète compose 31 poèmes inédits publiés quotidiennement.",
+    "startDate": "2025-08-01",
+    "endDate": "2025-08-31",
+    "publisher": {"@type":"Organization","name":"Éditions Lumen"}
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-slate-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#7c3aed"/><path d="M7 8h10v8H7z" fill="white" opacity="0.9"/></svg>
+        <div>
+          <div class="text-lg font-semibold">Éditions Lumen</div>
+          <div class="text-xs text-slate-500">Lueurs Reliées — Résidence d'Août</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="auteurs.html">Auteurs</a>
+        <a href="presse.html">Presse</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-purple-600 to-indigo-700 text-white py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">Résidence d'Août — Lueurs Reliées</h1>
+      <p class="mt-4 text-lg text-indigo-100 max-w-3xl mx-auto">Chaque mois d’août, une voix poétique contemporaine habite notre espace numérique : 31 poèmes, 31 images. Pour l'édition inaugurale, nous accueillons Lou Grimaud.</p>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="#programme" class="bg-white text-purple-700 px-5 py-3 rounded-md font-medium">Voir le programme</a>
+        <a href="#newsletter" class="border border-white text-white px-5 py-3 rounded-md">S'inscrire aux notifications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author spotlight -->
+  <section id="auteur" class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8 items-center">
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-bold">Lou Grimaud — Résidente 2025</h2>
+      <p class="mt-4 text-slate-700">Lou Grimaud est une poète contemporaine dont l'écriture explore les paysages intimes et les rencontres improbables. Pour cette résidence, Lou compose chaque jour un poème inédit accompagné d'une image choisie ou créée spécialement.</p>
+      <p class="mt-4 text-slate-600"><strong>Durée :</strong> du 1er au 31 août — <strong>Format :</strong> un poème + une image publiés chaque jour.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#calendar" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-md">Lecture quotidienne</a>
+        <a href="#a-propos" class="inline-block border border-purple-600 text-purple-600 px-4 py-2 rounded-md">À propos</a>
+      </div>
+    </div>
+    <div class="flex justify-center md:justify-end">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Portrait Lou Grimaud" class="w-48 h-48 rounded-lg object-cover shadow-lg">
+    </div>
+  </section>
+
+  <!-- Calendar / Grid of 31 poems -->
+  <section id="programme" class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold">Programme — 31 jours</h2>
+    <p class="mt-2 text-slate-600">Chaque case correspond à un jour : cliquez pour ouvrir le poème et l'image associée.</p>
+
+    <div id="calendar" class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <!-- Generate 31 cards -->
+      <!-- Example card structure; replace content dynamically or server-side -->
+      
+      <!-- We'll include day 1..31 -->
+    </div>
+
+    <!-- Poem modal -->
+    <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-60 p-4 z-50">
+      <div class="bg-white rounded-lg max-w-3xl w-full shadow-lg overflow-auto max-h-[90vh]">
+        <div class="flex items-start justify-between p-4 border-b">
+          <h3 id="modal-title" class="text-lg font-semibold">Jour — Titre</h3>
+          <button id="modal-close" class="text-slate-500 hover:text-slate-700">✕</button>
+        </div>
+        <div class="p-6 grid md:grid-cols-2 gap-6">
+          <div>
+            <img id="modal-img" src="" alt="" class="w-full h-64 object-cover rounded">
+          </div>
+          <div class="prose max-w-none text-slate-700">
+            <pre id="modal-poem" class="whitespace-pre-wrap text-sm"></pre>
+            <p class="mt-4 text-xs text-slate-500">Publié le <span id="modal-date"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About the project / submission guidelines for visual artists -->
+  <section id="a-propos" class="bg-white border-t">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold">À propos de Lueurs Reliées</h2>
+        <p class="mt-4 text-slate-700">Lueurs Reliées est un espace numérique dédié aux écritures contemporaines — résidences, collaborations et publications. La Résidence d'Août valorise le geste quotidien de la création et la rencontre entre poésie et image.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Appel aux artistes visuels</h3>
+        <p class="mt-2 text-slate-600">Photographes, illustrateur·rice·s et plasticien·ne·s peuvent proposer une image pour une journée de la résidence. Envoyez vos propositions à <a href="mailto:contact@editions-lumen.example" class="text-purple-600">contact@editions-lumen.example</a> — joignez 1 à 3 visuels en haute résolution et une courte bio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / share -->
+  <section id="newsletter" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-6 text-white md:flex md:items-center md:justify-between">
+      <div>
+        <h3 class="text-xl font-bold">Suivez la résidence</h3>
+        <p class="mt-2 text-indigo-100">Recevez chaque jour le poème directement dans votre boîte mail.</p>
+      </div>
+      <form class="mt-4 md:mt-0 flex gap-3" onsubmit="event.preventDefault(); alert('Merci — inscription prototype');">
+        <label for="email" class="sr-only">Adresse e‑mail</label>
+        <input id="email" type="email" required placeholder="votre@email.com" class="rounded-md px-4 py-2 min-w-[220px] text-slate-800">
+        <button class="bg-white text-purple-700 px-4 py-2 rounded-md font-medium">S'inscrire</button>
+      </form>
+    </div>
+
+    <div class="mt-6 flex items-center gap-4">
+      <span class="text-slate-600">Partager :</span>
+      <a href="#" class="text-purple-600">Twitter</a>
+      <a href="#" class="text-purple-600">Facebook</a>
+      <a href="#" class="text-purple-600">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+      <div>
+        <strong>Éditions Lumen</strong>
+        <div class="text-sm text-slate-500 mt-2">© 1998–2025 — Tous droits réservés</div>
+      </div>
+      <nav class="flex gap-4 text-sm text-slate-600">
+        <a href="catalogue.html">Catalogue</a>
+        <a href="auteurs.html">Auteurs</a>
+        <a href="soumissions.html">Soumettre un manuscrit</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Build calendar cards dynamically (31 days)
+    const calendar = document.getElementById('calendar');
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalImg = document.getElementById('modal-img');
+    const modalPoem = document.getElementById('modal-poem');
+    const modalDate = document.getElementById('modal-date');
+    const modalClose = document.getElementById('modal-close');
+
+    // Placeholder data - replace or fetch from API
+    const poems = Array.from({length:31}, (_,i) => ({
+      day: i+1,
+      title: `Lueurs — jour ${i+1}`,
+      date: new Date(2025,7,i+1).toLocaleDateString('fr-FR'),
+      img: `https://source.unsplash.com/collection/190727/800x600?sig=${i+1}`,
+      text: `Poème inédit jour ${i+1} —\n\n(texte provisoire)\n\nCe poème est une ébauche de l'esprit qui veille.`
+    }));
+
+    poems.forEach(p => {
+      const card = document.createElement('button');
+      card.className = 'poem-card bg-white p-4 rounded-lg shadow text-left flex flex-col items-start';
+      card.setAttribute('aria-label', `Ouvrir le poème du jour ${p.day}`);
+      card.innerHTML = `
+        <div class="w-full h-36 rounded-md overflow-hidden bg-slate-100">
+          <img src="${p.img}" alt="Image jour ${p.day}" class="w-full h-full object-cover">
+        </div>
+        <div class="mt-3">
+          <div class="text-sm text-slate-500">Jour ${p.day} • ${p.date}</div>
+          <h3 class="mt-1 font-semibold">${p.title}</h3>
+          <p class="mt-2 text-sm text-slate-600 line-clamp-3">${p.text}</p>
+        </div>
+      `;
+      card.addEventListener('click', () => openModal(p));
+      calendar.appendChild(card);
+    });
+
+    function openModal(p){
+      modalTitle.textContent = `${p.title}`;
+      modalImg.src = p.img;
+      modalImg.alt = `Image pour ${p.title}`;
+      modalPoem.textContent = p.text;
+      modalDate.textContent = p.date;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+    function closeModal(){ modal.classList.remove('flex'); modal.classList.add('hidden'); document.body.style.overflow = ''; }
+  </script>
+</body>
+</html>

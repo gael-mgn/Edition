@@ -1,0 +1,81 @@
+:root { --brand: #0f172a; --accent: #7c3aed; }
+  
+body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    /* small decorative flourish for hero image */
+.hero-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.45), rgba(15,23,42,0.65)); }
+.residence-overlay { background: linear-gradient(180deg, rgba(15,23,42,0.55), rgba(15,23,42,0.75)); }
+
+.bold {
+  font-weight: bold;
+}
+
+
+      main {
+        background-color: #F2E8D7;
+      }
+      h2 {
+        font-family: 'Playfair Display', serif;
+      } 
+      h3 {
+        color: black;
+      }
+      .lien {
+        color: #9C4128;
+      }
+      .lien:hover {
+        text-decoration: underline;
+      }
+
+
+    .btn {
+      color: #F2E8D7;
+      background-color: #374C47;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #9C4128;
+    }
+        h1 {
+      color: #F2E8D7;
+      font-family: 'Playfair Display', serif;
+    }
+    p {
+      font-family: 'Inter';
+    }
+
+
+@media (max-width: 768px) {
+  .no-mobile {
+    display: none;
+  }
+  .subtitle {
+    display: none;
+  }
+}
+      header {
+        color: #F2E8D7;
+        background-color: #374C47;
+      }
+      footer {
+        color: #F2E8D7;
+        background-color: #374C47;
+      }
+      #footer-title {
+        color: #EFDFC4;
+      }
+
+   .mobile-menu-btn {
+            font-size: 2rem;
+          }
+
+  .loop {
+          stroke: #F2E8D7;
+        }
+
+        .card {
+        color: black;
+        background-color: #F2E8D7;
+      }
+      .contact-card {
+        background-color: #EFDFC4;
+      }

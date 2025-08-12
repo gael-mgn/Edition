@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lueurs Poétiques — Éditions des Lueurs Reliées</title>
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Lueurs Reliées, Poésie, Collection, Livre, lueurs poétiques">
+  <meta name="description" content="Lueurs Poétiques est l’espace dédié à la poésie au sein des Éditions des Lueurs Reliées. Cette collection accueille des voix qui explorent le monde par la force du langage. Intimes ou collectives, sociales ou politiques, expérimentales ou lyriques, les œuvres publiées interrogent notre époque, nos sensibilités et nos engagements.">
+
+
+  <link rel="icon" href="../img/favicon-48.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="bg-gray-50 text-slate-800">
+  <!-- HEADER (simplifié avec retour accueil) -->
+  <header class=" shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../img/favicon-48.ico" alt="Icône" width="40" height="40" />
+        <div>
+          <div class="text-lg font-semibold">Éditions des Lueurs Reliées</div>
+          <div class="text-xs subtitle">Poésies — Romans — Projets Éditoriaux</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../index.html#nouveautes" class="hover:underline">Nouveautés</a>
+        <a href="../catalogue.html" class="hover:underline">Catalogue</a>
+        <a href="../auteurs.html" class="hover:underline">Auteurs</a>
+        <a href="../submit.html" class="hover:underline">Soumettre un manuscrit</a>
+        <a href="../contact.html" class="hover:underline">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="btn-search" aria-label="Recherche" class="p-2 rounded-md no-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="loop">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-2xl">☰</button>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="../catalogue.html">Catalogue</a>
+        <a href="../auteurs.html">Auteurs</a>
+        <a href="../submit.html">Soumettre un manuscrit</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- HERO / INTRO -->
+<section id="hero" class="relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 bg-cover bg-center" style="background-image: url('../img/logo.png'); color: #F2E8D7;">
+    <!-- Overlay -->
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-5xl font-extrabold">Lueurs Poétiques</h1>
+        <p class="mt-4 text-lg">Collection de poésie contemporaine</p>
+    </div>
+</section>
+
+  <style>
+    .auteur-card {
+      background-color: #EFDFC4;
+    }
+  </style>
+
+  <!-- LISTE AUTEURS -->
+  <main>
+    <section class="max-w-7xl mx-auto px-6 py-12">
+    
+
+<style>
+  .list {
+  list-style-type: circle; /* disc | circle | square | none */
+  padding-left: 1.5rem; /* Ajoute un peu d’espace */
+  color: #333;
+}
+
+.list li {
+  font-size: 16px;
+}
+p {
+  margin-bottom: 0.75em;
+}
+.section {
+  background-color: #EFDFC4;
+}
+</style>
+
+
+<div class="p-6 rounded-lg shadow-lg section mb-4"> <!-- Réduction du padding interne -->
+      <h2 class="text-2xl font-semibold mb-6">À propos des Lueurs Poétiques</h2>
+      <p>Cette collection accueille des voix qui explorent le monde par la force du langage. Intimes ou collectives, sociales ou politiques, expérimentales ou lyriques, les œuvres publiées interrogent notre époque, nos sensibilités et nos engagements.</p>
+      <p>
+
+Nous considérons la poésie comme un laboratoire du langage et un miroir sensible de la société contemporaine. Chaque recueil devient ainsi un lieu de dialogue entre l’auteur, le lecteur et les questions qui traversent nos existences.
+</p>
+<p>
+Fidèle à l’esprit de la maison, chaque ouvrage publié dans la collection Lueurs Poétiques est associé à une cause concrète, par le biais d’un partenariat avec une association en lien avec les thématiques abordées. La poésie y devient alors à la fois création littéraire et acte solidaire.</p>
+
+</div>
+
+<div class="p-6 rounded-lg shadow-lg section mt-6 mb-6"> 
+      <h2 class="text-2xl font-semibold mb-4">Parcourir les autres collections</h2>
+
+
+    <ul>
+      <li><a href="lueurs romanesques.html" class="lien">Lueurs Romanesques</a></li>
+      <li><a href="lueurs singulières.html" class="lien">Lueurs Singulières</a></li>
+    </ul>
+    </div>
+
+
+
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="border-t">
+      <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row md:justify-between gap-6">
+        <div>
+          <strong id="footer-title">Éditions des Lueurs Reliées</strong>
+          <div class="text-sm mt-2">© 2025–<span id="year"> — Tous droits réservés</div>
+          <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+        </div>
+        <nav class="flex gap-4 text-sm">
+          <a href="policy.html">Mentions légales</a>
+          <a href="#cgv">CGV</a>
+          <a href="press.html">Presse</a>
+        </nav>
+      </div>
+    </footer>
+</body>
+</html>
